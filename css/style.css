@@ -510,6 +510,7 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
   color: #f5f5f5;
   font-size: 1.1rem;
   font-weight: 500;
+  padding: 10px 18px;
   margin: 0 auto;
 }
 
@@ -553,5 +554,5 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 
 .footer .btn-up a i {
   color: #f5f5f5;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
