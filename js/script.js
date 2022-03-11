@@ -1,3 +1,4 @@
+// nav scroll
 window.onscroll = function () {
   scrollFunction();
 };
@@ -9,3 +10,8 @@ function scrollFunction() {
     document.querySelector(".navbar").style.backgroundColor = "transparent";
   }
 }
+
+// smooth scroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 300,
+});
