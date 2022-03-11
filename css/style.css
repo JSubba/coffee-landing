@@ -20,15 +20,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 0.8em;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f5f5f5;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
+  height: 13em;
   background: #252525;
+  border-radius: 0.5rem;
 }
 
 a {
@@ -37,14 +39,6 @@ a {
 
 li {
   list-style: none;
-}
-
-.btn:active,
-.btn:focus,
-.btn.active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none !important;
 }
 
 /* Header */
@@ -83,14 +77,36 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 }
 
 .home .showcase-header h3 {
-  padding: 1rem 0;
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 600;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .home .showcase-header h3 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+}
+
+.home .showcase-header h3 span {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .home .showcase-header h3 span {
+    font-size: 2rem;
+  }
+}
+
+.home .showcase-header .btn {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 3px;
+  background-color: #340285;
+  color: #f5f5f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5em;
 }
 
 .home .showcase-header .btn:hover {
@@ -144,7 +160,8 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 
 .about .about-content .icons-container .icons {
   padding: 0.5rem 1rem;
-  background: #ddd;
+  border: 1px solid #340285;
+  color: #340285;
   text-align: center;
 }
 
@@ -156,7 +173,7 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 .about .about-content .icons-container .icons h3 {
   font-size: 1rem;
   text-transform: capitalize;
-  color: #555;
+  color: #340285;
 }
 
 /* Menu */
@@ -219,10 +236,6 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 }
 
 /* Gallery */
-.gallery h1 {
-  color: #252525;
-}
-
 .gallery .box-container {
   display: -ms-grid;
   display: grid;
@@ -313,11 +326,6 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
   border-radius: 50%;
 }
 
-.reviews .reviews-container h3,
-.reviews .reviews-container p {
-  color: #252525;
-}
-
 .reviews .reviews-container .stars {
   margin-top: 1rem;
 }
@@ -330,6 +338,13 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 /* Blogs */
 .blogs {
   background-color: #252525;
+}
+
+.blogs .blog:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /* Contact */
@@ -362,7 +377,8 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 }
 
 .contact .contact-container .box {
-  border: 1px solid #252525;
+  border: 1px solid #340285;
+  border-radius: 0.3rem;
   padding: 1rem;
   text-align: center;
 }
@@ -391,12 +407,17 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 }
 
 .contact form .box {
-  border: 1px solid #252525;
-  font-size: 0.9rem;
   width: 80%;
   display: block;
   margin: 0.3rem auto;
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-bottom: 1px solid #252525;
+  font-size: 0.9rem;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
 }
 
 .contact form .box:focus {
@@ -465,8 +486,6 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 .footer form {
   margin: 0 auto;
   max-width: 40rem;
-  background: #f5f5f5;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +495,11 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
   .footer form {
     width: 80%;
   }
+}
+
+.footer form input {
+  border: none;
+  border-radius: 0.2em;
 }
 
 .footer form .link-btn {
@@ -494,6 +518,13 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
           animation: flash;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+@media (max-width: 576px) {
+  .footer form .link-btn {
+    font-size: small;
+    padding: 5px;
+  }
 }
 
 .footer form .email {
@@ -522,4 +553,5 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
 
 .footer .btn-up a i {
   color: #f5f5f5;
+  font-size: 1.4rem;
 }

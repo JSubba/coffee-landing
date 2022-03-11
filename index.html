@@ -26,10 +26,13 @@
 
     <title>shonanCOFFEE</title>
     <link rel="icon" href="images/coffee.png" />
+
+    <!-- Smooth-scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header id="header">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-4">
         <div class="container">
           <a
@@ -101,10 +104,10 @@
           class="row vh-100 align-items-center text-center text-white"
         >
           <div class="col-12 col-md-6">
-            <h3 class="text-capitalize">discover your day with
+            <h3 class="text-capitalize">discover your day
               <br>
-              <span>"our coffee"</span></h3>
-            <a href="#menu" class="btn btn-outline-light btn-lg ">EXPLORE
+              <span>"with our coffee"</span></h3>
+            <a href="#menu" class="btn btn-lg mt-4">EXPLORE
               <i class="bi bi-chevron-double-right"></i>
             </a>
           </div>
@@ -320,7 +323,7 @@
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
-            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
           </div>
           </div>
           <div class="col-12 col-lg-4 pb-4">
@@ -335,7 +338,7 @@
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
+            <i class="bi bi-star-half"></i>
             <i class="bi bi-star-half"></i>
           </div>
           </div>
@@ -345,20 +348,20 @@
 
     <!-- Blogs  -->
       <section id="blogs" class="blogs text-white pt-4">
-      <h1 class="text-white text-center text-capitalize pt-4">our blogs</h1>
+      <h1 class="text-white text-center text-capitalize py-4">our blogs</h1>
       <div class="container pt-4">
         <div class="row mx-auto">
-          <div class="col-12 col-lg-4 pb-5">
+          <div class="blog col-12 col-lg-4 pb-5">
             <img
               src="images/1-coffee-flavour-small.jpg"
               class="mb-4 img-fluid d-block mx-auto"
               alt="Coffee Flavour"
-              width="441"
+              width="450"
               height="248"
               loading="lazy"
             />
             <h3 class="text-center">Amazing Flavour</h3>
-            <p class="fw-lighter">
+            <p class="fw-lighter lh-lg">
               <small>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
                 veniam ullam illo dolorum dolor. Dolor, velit vitae? Fugiat
@@ -367,17 +370,17 @@
               </small>
             </p>
           </div>    
-          <div class="col-12 col-lg-4 pb-5">
+          <div class="blog col-12 col-lg-4 pb-5">
             <img
               src="images/2-health-benefits-small.jpg"
               class="mb-4 img-fluid d-block mx-auto"
               alt="Health Benefits"
-              width="441"
+              width="450"
               height="248"
               loading="lazy"
             />
             <h3 class="text-center">Massive Benefits</h3>
-            <p class="fw-lighter">
+            <p class="fw-lighter lh-lg">
               <small>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
                 veniam ullam illo dolorum dolor. Dolor, velit vitae? Fugiat
@@ -386,17 +389,17 @@
               </small>
             </p>
           </div>    
-          <div class="col-12 col-lg-4 pb-5">
+          <div class="blog col-12 col-lg-4 pb-5">
             <img
               src="images/3-essential-nutrients-small.jpg"
               class="mb-4 img-fluid d-block mx-auto"
               alt="Essential Nutrients"
-              width="441"
+              width="450"
               height="248"
               loading="lazy"
             />
             <h3 class="text-center">Essential Content</h3>
-            <p class="fw-lighter">
+            <p class="fw-lighter lh-lg">
               <small>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
                 veniam ullam illo dolorum dolor. Dolor, velit vitae? Fugiat
@@ -440,7 +443,7 @@
           <form action="" class="col-md-6">
             <input type="text" placeholder="name" class="box" />
             <input type="email" placeholder="email" class="box" />
-            <input type="number" placeholder="phone" class="box" />
+            <input type="text" placeholder="phone" class="box" />
             <textarea
               name=""
               placeholder="message"
@@ -449,25 +452,29 @@
               cols="15"
               rows="4"
             ></textarea>
-            <input type="submit" value="SUBMIT" class="link-btn d-block mx-auto mt-2" />
+            <a href="#header">
+              <input type="submit" value="SUBMIT" class="link-btn d-block mx-auto mt-2" />
+            </a>
           </form>
         </div>
       </div>
     </section>
 
     <!-- Footer  -->
-    <section class="footer pb-2">
+    <section class="footer">
       <div class="container pt-4">
         <h3>newsletter</h3>
         <p>subscribe to our latest news</p>
-        <form action="">
+        <form>
           <input
             type="email"
             name=""
             placeholder="email"
             class="email"
           />
-          <input type="submit" value="SUBSCRIBE" class="link-btn" />
+          <a href="#header">
+            <input type="submit" value="SUBSCRIBE" class="link-btn" />
+          </a>
         </form>
         <p class="social-icons d-flex justify-content-around w-50 mx-auto pt-4">          
           <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>    
@@ -476,12 +483,12 @@
           <a class="text-muted" href="#"><i class="bi bi-whatsapp"></i></a>          
         </p>
       </div>
-      <hr class="text-white">
-      <p class="text-center fs-6 pt-0 mt-0">
+      <hr class="text-white mb-0">
+      <p class="text-center fs-6">
         <small>
         <i class="bi bi-cup-fill"></i>&nbsp;shonan</span><span class="fs-6 fw-bold">COFFEE</span> | &copy;&nbsp;All Rights Reserved - 2022         
       </small>
-        <span class="btn-up float-end pe-4"><a href="#"><i class="bi bi-arrow-up-square"></i></a></span>
+        <span class="btn-up float-end pe-4"><a href="#"><i class="bi bi-arrow-up-circle"></i></a></span>
       </p>
     </section>
 

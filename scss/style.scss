@@ -29,13 +29,15 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 0.8em;
 }
 ::-webkit-scrollbar-track {
-  background: $white-color;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
+  height: 13em;
   background: $black-color;
+  border-radius: 0.5rem;
 }
 
 a {
@@ -44,13 +46,6 @@ a {
 
 li {
   list-style: none;
-}
-
-.btn:active,
-.btn:focus,
-.btn.active {
-  box-shadow: none;
-  outline: none !important;
 }
 
 @mixin gridTemplate {
@@ -117,16 +112,30 @@ header {
     position: relative;
 
     h3 {
-      padding: 1rem 0;
-      font-size: 4rem;
+      font-size: 5rem;
+      font-weight: 600;
 
-      @media (max-width: $large-screen) {
+      @media (max-width: $medium-screen) {
+        font-size: 4rem;
+      }
+
+      span {
         font-size: 3rem;
+
+        @media (max-width: $medium-screen) {
+          font-size: 2rem;
+        }
       }
     }
 
-    .btn:hover {
-      @include flash;
+    .btn {
+      @include linkButton();
+      padding: 0.5rem 1.5rem;
+      font-size: 1.5em;
+
+      &:hover {
+        @include flash;
+      }
     }
   }
 }
@@ -164,7 +173,8 @@ header {
 
       .icons {
         padding: 0.5rem 1rem;
-        background: $lightGrey-color;
+        border: 1px solid $indigo-color;
+        color: $indigo-color;
         text-align: center;
 
         i {
@@ -174,7 +184,7 @@ header {
         h3 {
           font-size: 1rem;
           text-transform: capitalize;
-          color: $grey-color;
+          color: $indigo-color;
         }
       }
     }
@@ -228,10 +238,6 @@ header {
 
 /* Gallery */
 .gallery {
-  h1 {
-    color: $black-color;
-  }
-
   .box-container {
     @include gridTemplate;
 
@@ -307,11 +313,6 @@ header {
       border-radius: 50%;
     }
 
-    h3,
-    p {
-      color: $black-color;
-    }
-
     .stars {
       margin-top: 1rem;
 
@@ -326,6 +327,11 @@ header {
 /* Blogs */
 .blogs {
   background-color: $black-color;
+  .blog {
+    &:hover {
+      @include pulse();
+    }
+  }
 }
 
 /* Contact */
@@ -343,7 +349,8 @@ header {
     }
 
     .box {
-      border: 1px solid $black-color;
+      border: 1px solid $indigo-color;
+      border-radius: 0.3rem;
       padding: 1rem;
       text-align: center;
 
@@ -374,12 +381,16 @@ header {
 
   form {
     .box {
-      border: 1px solid $black-color;
-      font-size: 0.9rem;
       width: 80%;
       display: block;
       margin: 0.3rem auto;
-      padding: 0.2rem 1rem;
+      padding: 0.3rem 1rem;
+      border: none;
+      border-bottom: 1px solid $black-color;
+      font-size: 0.9rem;
+      outline: none;
+      box-shadow: none;
+      background: transparent;
 
       &:focus {
         outline: none;
@@ -427,12 +438,15 @@ header {
   form {
     margin: 0 auto;
     max-width: 40rem;
-    background: $white-color;
-    border-radius: 5px;
     display: flex;
 
     @media (max-width: $small-screen) {
       width: 80%;
+    }
+
+    input {
+      border: none;
+      border-radius: 0.2em;
     }
 
     .link-btn {
@@ -441,6 +455,11 @@ header {
 
       &:hover {
         @include flash;
+      }
+
+      @media (max-width: $small-screen) {
+        font-size: small;
+        padding: 5px;
       }
     }
     .email {
@@ -467,5 +486,6 @@ header {
 
   .btn-up a i {
     color: $white-color;
+    font-size: 1.4rem;
   }
 }
