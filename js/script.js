@@ -1,4 +1,3 @@
-// nav scroll
 window.onscroll = function () {
   scrollFunction();
 };
@@ -11,7 +10,6 @@ function scrollFunction() {
   }
 }
 
-// smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 300,
 });

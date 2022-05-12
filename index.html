@@ -4,121 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-    <!-- Animate  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
     <title>shonanCOFFEE</title>
     <link rel="icon" href="images/coffee.png" />
-
-    <!-- Smooth-scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
-    <!-- Header -->
     <header id="header">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-4">
-        <div class="container">
-          <a
-            href="index.html"
-            class="text-decoration-none text-white fs-5 fw-bold"
-            ><i class="bi bi-cup-fill"></i>&nbsp;<span class="fw-lighter"
-              >shonan</span
-            ><span class="text-secondary fs-5 fw-bold coffee">COFFEE</span></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item mx-auto">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#menu">Menu</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#blogs">Blogs</a>
-              </li>
-              <li class="nav-item mx-auto">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark py-4 py-lg-2 px-4"
+      >
+        <a
+          href="index.html"
+          class="text-decoration-none text-white fs-5 fw-bold"
+          ><i class="bi bi-cup-fill"></i>&nbsp;<span class="fw-lighter fs-4"
+            >shonan</span
+          ><span class="text-secondary fs-4 fw-bold coffee">COFFEE</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto my-4 mx-0">
+            <li class="nav-item mx-auto fs-5 fs-md-6">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-auto fs-5 fs-md-6">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-auto fs-5 fs-md-6">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item mx-auto fs-5 fs-md-6">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item mx-auto fs-5 fs-md-6">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item mx-auto fs-5 fs-md-6">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <!-- Home -->
     <section id="home" class="home">
       <div class="container-fluid">
-      <video 
-        playsinline
-        autoplay
-        muted
-        loop
-        loading="lazy"
-        poster="images/home-bg.jpg"
-      >
-        <source src="video/shonaCoffee-headerVideo.mp4" type="video/mp4" />
-      </video>
-
-      <div class="showcase-header">
-        <div class="container">
-        <div
-          class="row vh-100 align-items-center text-center text-white"
+        <video
+          playsinline
+          autoplay
+          muted
+          loop
+          loading="lazy"
+          poster="images/home-bg.jpg"
         >
-          <div class="col-12 col-md-6">
-            <h3 class="text-capitalize">discover your day
-              <br>
-              <span>"with our coffee"</span></h3>
-            <a href="#menu" class="btn btn-lg mt-4">EXPLORE
-              <i class="bi bi-chevron-double-right"></i>
-            </a>
+          <source src="video/shonaCoffee-headerVideo.mp4" type="video/mp4" />
+        </video>
+
+        <div class="showcase-header">
+          <div class="container">
+            <div class="row vh-100 align-items-center text-center text-white">
+              <div class="col-12 col-md-6">
+                <h3 class="text-capitalize">
+                  discover your day
+                  <br />
+                  <span>"with our coffee"</span>
+                </h3>
+                <a href="#menu" class="btn btn-lg mt-4"
+                  >EXPLORE
+                  <i class="bi bi-chevron-double-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
 
-    <!-- About  -->
-    <section id="about" class="about pt-4">
-      <div class="container">
+    <section class="about pt-4" id="about">
+      <div class="container py-5">
         <div class="row mx-auto">
           <div
             class="col-md-6 about-img-div d-flex justify-content-center align-items-center"
@@ -141,7 +129,7 @@
                 <h3 class="pt-2">best coffee</h3>
               </div>
               <div class="icons">
-                <i class="bi bi-truck"></i>                
+                <i class="bi bi-truck"></i>
                 <h3 class="pt-2">free delivery</h3>
               </div>
               <div class="icons">
@@ -154,15 +142,13 @@
       </div>
     </section>
 
-    <!-- Menu -->
-    <section class="menu" id="menu">
+    <section class="menu py-5" id="menu">
       <h1 class="text-center text-capitalize pt-5">our menu</h1>
-
-      <div class="container box-container py-5">
+      <div class="container py-5">
         <div class="box">
           <img src="images/menu-1.png" alt="" />
           <h3>madagascar</h3>
-          <p class="mb-4">
+          <p class="px-4 pb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             eos.
           </p>
@@ -171,7 +157,7 @@
         <div class="box">
           <img src="images/menu-2.png" alt="" />
           <h3>colombia</h3>
-          <p class="mb-4">
+          <p class="px-4 pb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             eos.
           </p>
@@ -180,7 +166,7 @@
         <div class="box">
           <img src="images/menu-3.png" alt="" />
           <h3>kilimanjaro</h3>
-          <p class="mb-4">
+          <p class="px-4 pb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             eos.
           </p>
@@ -189,7 +175,7 @@
         <div class="box">
           <img src="images/menu-4.png" alt="" />
           <h3>brazil</h3>
-          <p class="mb-4">
+          <p class="px-4 pb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             eos.
           </p>
@@ -198,7 +184,7 @@
         <div class="box">
           <img src="images/menu-5.png" alt="" />
           <h3>blended</h3>
-          <p class="mb-4">
+          <p class="px-4 pb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             eos.
           </p>
@@ -207,7 +193,7 @@
         <div class="box">
           <img src="images/menu-6.png" alt="menu image" />
           <h3>american</h3>
-          <p class="mb-4">
+          <p class="px-4 pb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             eos.
           </p>
@@ -216,144 +202,37 @@
       </div>
     </section>
 
-    <!-- Gallery  -->
-    <section id="gallery" class="gallery">
+    <section class="gallery py-5" id="gallery">
       <h1 class="text-center text-capitalize pt-5">our gallery</h1>
-      <div class="box-container container py-5">
+      <div class="container py-5">
         <div class="box">
-          <img src="images/g-img-1.jpg" alt="gallery image" />
-          <div class="content">
-            <h3>morning coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus, dolore?
-            </p>
-            <a href="#" class="link-btn">read more</a>
-          </div>
+          <img src="images/gallery1.jpg" alt="gallery image" />
         </div>
         <div class="box">
-          <img src="images/g-img-2.jpg" alt="gallery image" />
-          <div class="content">
-            <h3>morning coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus, dolore?
-            </p>
-            <a href="#" class="link-btn">read more</a>
-          </div>
+          <img src="images/gallery2.jpg" alt="gallery image" />
         </div>
         <div class="box">
-          <img src="images/g-img-3.jpg" alt="gallery image" />
-          <div class="content">
-            <h3>afternoon coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus, dolore?
-            </p>
-            <a href="#" class="link-btn">read more</a>
-          </div>
+          <img src="images/gallery3.jpg" alt="gallery image" />
         </div>
         <div class="box">
-          <img src="images/g-img-4.jpg" alt="gallery image" />
-          <div class="content">
-            <h3>afternoon coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus, dolore?
-            </p>
-            <a href="#" class="link-btn">read more</a>
-          </div>
+          <img src="images/gallery4.jpg" alt="gallery image" />
         </div>
         <div class="box">
-          <img src="images/g-img-5.jpg" alt="gallery image" />
-          <div class="content">
-            <h3>evening coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus, dolore?
-            </p>
-            <a href="#" class="link-btn">read more</a>
-          </div>
+          <img src="images/gallery5.jpg" alt="gallery image" />
         </div>
         <div class="box">
-          <img src="images/g-img-6.jpg" alt="gallery image" />
-          <div class="content">
-            <h3>evening coffee</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus, dolore?
-            </p>
-            <a href="#" class="link-btn">read more</a>
-          </div>
+          <img src="images/gallery6.jpg" alt="gallery image" />
         </div>
       </div>
     </section>
 
-    <!-- Reviews  -->
-    <section class="reviews" id="reviews">
-      <h1 class="text-center text-capitalize pt-5">customer reviews</h1>
-      <div class="reviews-container container py-4">
-        <div class="row mx-auto">
-          <div class="col-12 col-lg-4 pb-4">
-            <img src="images/pic-1.png" class="d-block mx-auto" alt="person image" />
-          <h3 class="text-center text-capitalize pt-3">john matt</h3>
-          <p class="text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            ipsum eos? Perspiciatis expedita laudantium blanditiis cupiditate at
-            natus, quam alias?
-          </p>
-          <div class="stars text-center">
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star-half"></i>
-          </div>
-          </div>
-          <div class="col-12 col-lg-4 pb-4">
-            <img src="images/pic-2.png" class="d-block mx-auto" alt="person image" />
-          <h3 class="text-center text-capitalize pt-3">jenny doe</h3>
-          <p class="text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            ipsum eos? Perspiciatis expedita laudantium blanditiis cupiditate at
-            natus, quam alias?
-          </p>
-          <div class="stars text-center">
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-          </div>
-          </div>
-          <div class="col-12 col-lg-4 pb-4">
-            <img src="images/pic-3.png" class="d-block mx-auto" alt="person image" />
-          <h3 class="text-center text-capitalize pt-3">Don Sign</h3>
-          <p class="text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            ipsum eos? Perspiciatis expedita laudantium blanditiis cupiditate at
-            natus, quam alias?
-          </p>
-          <div class="stars text-center">
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star-half"></i>
-            <i class="bi bi-star-half"></i>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blogs  -->
-      <section id="blogs" class="blogs text-white pt-4">
+    <section id="blogs" class="blogs text-white py-5">
       <h1 class="text-white text-center text-capitalize py-4">our blogs</h1>
       <div class="container pt-4">
         <div class="row mx-auto">
           <div class="blog col-12 col-lg-4 pb-5">
             <img
-              src="images/1-coffee-flavour-small.jpg"
+              src="images/blog1.jpg"
               class="mb-4 img-fluid d-block mx-auto"
               alt="Coffee Flavour"
               width="450"
@@ -361,18 +240,18 @@
               loading="lazy"
             />
             <h3 class="text-center">Amazing Flavour</h3>
-            <p class="fw-lighter lh-lg">
+            <p class="fw-lighter lh-lg px-2">
               <small>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
                 veniam ullam illo dolorum dolor. Dolor, velit vitae? Fugiat
                 quidem nostrum nobis sit beatae consequuntur quisquam iusto
-                reprehenderit voluptatibus officia? Natus.
+                reprehenderit voluptatibus official.
               </small>
             </p>
-          </div>    
+          </div>
           <div class="blog col-12 col-lg-4 pb-5">
             <img
-              src="images/2-health-benefits-small.jpg"
+              src="images/blog2.jpg"
               class="mb-4 img-fluid d-block mx-auto"
               alt="Health Benefits"
               width="450"
@@ -380,18 +259,18 @@
               loading="lazy"
             />
             <h3 class="text-center">Massive Benefits</h3>
-            <p class="fw-lighter lh-lg">
+            <p class="fw-lighter lh-lg px-2">
               <small>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
                 veniam ullam illo dolorum dolor. Dolor, velit vitae? Fugiat
                 quidem nostrum nobis sit beatae consequuntur quisquam iusto
-                reprehenderit voluptatibus officia? Natus.
+                reprehenderit voluptatibus official.
               </small>
             </p>
-          </div>    
+          </div>
           <div class="blog col-12 col-lg-4 pb-5">
             <img
-              src="images/3-essential-nutrients-small.jpg"
+              src="images/blog3.jpg"
               class="mb-4 img-fluid d-block mx-auto"
               alt="Essential Nutrients"
               width="450"
@@ -399,12 +278,12 @@
               loading="lazy"
             />
             <h3 class="text-center">Essential Content</h3>
-            <p class="fw-lighter lh-lg">
+            <p class="fw-lighter lh-lg px-2">
               <small>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
                 veniam ullam illo dolorum dolor. Dolor, velit vitae? Fugiat
                 quidem nostrum nobis sit beatae consequuntur quisquam iusto
-                reprehenderit voluptatibus officia? Natus.
+                reprehenderit voluptatibus official.
               </small>
             </p>
           </div>
@@ -412,33 +291,20 @@
       </div>
     </section>
 
-    <!-- Contact  -->
-    <section class="contact" id="contact">
+    <section class="contact py-5" id="contact">
       <h1 class="text-center text-capitalize pt-5">contact us</h1>
       <div class="container py-5">
-        <div class="contact-container container d-flex justify-content-center">
-          <div class="box w-75">
-            <i class="bi bi-telephone-fill"></i>
-            <h3>phone</h3>
-            <p>+123-456-7890</p>
-            <p>+111-222-3333</p>
-          </div>
-          <div class="box w-75">
-            <i class="bi bi-envelope-fill"></i>
-            <h3>email</h3>
-            <p>shonan@email.com</p>
-            <p>contact@email.com</p>
-          </div>
-          <div class="box w-75">
-            <i class="bi bi-map-fill"></i>
-            <h3>address</h3>
-            <p>Enoshima, Japan</p>
-            <p>〒251-0036</p>
-          </div>
-        </div>
         <div class="row align-items-center">
           <div class="col-md-6 mb-5 mb-md-0 d-flex justify-content-center">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13024.947530944904!2d139.47229638347986!3d35.30009508300913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee6a0ffb471%3A0x2647c3f7d0777a14!2sEnoshima!5e0!3m2!1sen!2sus!4v1645784471440!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13024.947530944904!2d139.47229638347986!3d35.30009508300913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee6a0ffb471%3A0x2647c3f7d0777a14!2sEnoshima!5e0!3m2!1sen!2sus!4v1645784471440!5m2!1sen!2sus"
+              width="400"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
           <form action="" class="col-md-6">
             <input type="text" placeholder="name" class="box" />
@@ -453,52 +319,67 @@
               rows="4"
             ></textarea>
             <a href="#header">
-              <input type="submit" value="SUBMIT" class="link-btn d-block mx-auto mt-2" />
+              <input
+                type="submit"
+                value="SUBMIT"
+                class="link-btn d-block mx-auto mt-2"
+              />
             </a>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Footer  -->
-    <section class="footer">
-      <div class="container pt-4">
-        <h3>newsletter</h3>
-        <p>subscribe to our latest news</p>
-        <form>
-          <input
-            type="email"
-            name=""
-            placeholder="email"
-            class="email"
-          />
-          <a href="#header">
-            <input type="submit" value="SUBSCRIBE" class="link-btn" />
-          </a>
-        </form>
-        <p class="social-icons d-flex justify-content-around w-50 mx-auto pt-4">          
-          <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>    
-          <a class="text-muted" href="#"><i class="bi bi-instagram"></i></a>         
-          <a class="text-muted" href="#"><i class="bi bi-facebook"></i></a>          
-          <a class="text-muted" href="#"><i class="bi bi-whatsapp"></i></a>          
-        </p>
+    <footer>
+      <div class="container text-white opacity-75 py-4">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <span class="fs-4">shonan</span
+            ><span class="text-secondary fs-4 fw-bold">COFFEE</span><br />
+            <img src="images/coffee.png" alt="logo" />
+            <div class="social-icons pt-2">
+              <a href="#"><i class="bi bi-facebook fs-4 px-2"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-4 px-2"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-4 px-2"></i></a>
+              <a href="#"><i class="bi bi-github fs-4 px-2"></i></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h6>Navigation</h6>
+            <div class="d-flex flex-column">
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#menu">Menu</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h6>More</h6>
+            <div class="d-flex flex-column">
+              <a href="#blog">Blog</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#">FAQ's</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h6>Contact</h6>
+            <div class="d-flex flex-column">
+              <span>111 Enoshima</span>
+              <span>Kanagawa</span>
+              <span>〒100-0002</span>
+              <span>0120-111</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr class="text-white m-0">
-      <p class="text-center fs-6 m-0 pb-3">
-        <small>
-        <i class="bi bi-cup-fill"></i>&nbsp;shonan</span><span class="fs-6 fw-bold">COFFEE</span> | &copy;&nbsp;All Rights Reserved - 2022         
-      </small>
-        <span class="btn-up float-end pe-4"><a href="#"><i class="bi bi-arrow-up-circle"></i></a></span>
-      </p>
-    </section>
+    </footer>
 
-    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <!-- Custom JS  -->
     <script src="js/script.js"></script>
   </body>
 </html>
